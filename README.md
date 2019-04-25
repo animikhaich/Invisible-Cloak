@@ -4,7 +4,7 @@ This is simply a program that uses color segmentation and a bit of image process
 
 You can take a unicolor bedsheet and apply color segmentation on it. After that take a picture of the background and place the bedsheet over yourself to virtually disappear, or make some part of your body disappear.
 
-<img align="center" src="Assets/output.png" alt="Invisible Cloak">
+<img align="middle" src="Assets/output.png" alt="Invisible Cloak">
 
 ## Dependencies:
   1. Python 3
