@@ -7,9 +7,9 @@ def detect_blue(frame, background):
 
     # Create HSV color mask and segment the image based on Blue color
     sensitivity = 20
-    H_Value = 20    # Change this value if you want to segment some other color 
-    light_blue = np.array([H_Value - sensitivity, 60, 60]) #the lower range of color
-    dark_blue = np.array([H_Value + sensitivity, 255, 255]) #the upper range of color
+    H_Value = 20    # Change this value if you want to segment some other color
+    light_blue = np.array([H_Value - sensitivity, 60, 60])
+    dark_blue = np.array([H_Value + sensitivity, 255, 255])
     mask = cv2.inRange(hsv_image, light_blue, dark_blue)    # Creating a segmentaion mask for the blue color
 
     # Apply closing operation to fill out the unwanted gaps in the image. Bigger the kernel size, lesser the gaps
@@ -34,7 +34,7 @@ def detect_blue(frame, background):
 
 
 
-# Initiate video capture from source '0.
+# Initiate video capture from source '0. 
 # Change the source value if you have more than one webcam and wish to use the secondary one
 cap = cv2.VideoCapture(0)
 
